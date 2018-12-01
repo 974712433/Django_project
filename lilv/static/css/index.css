@@ -49,7 +49,7 @@ tab_box
 .header_sj {
 	width: 17px;
     height: 8px;
-    background: url(../img/headico.png) -80px -12px no-repeat;
+    background: url(/static/img/headico.png) -80px -12px no-repeat;
     position: absolute;
     z-index: 2;
     top:1px;
@@ -256,7 +256,7 @@ tab_box
     /*display: none;*/
     width: 22px;
     height: 12px;
-    background: url(../img/amt_tit.gif) no-repeat;
+    background: url(/static/img/amt_tit.gif) no-repeat;
     margin-left: -11px;
     position: absolute;
     z-index:17;
@@ -638,7 +638,7 @@ tab_box
     display: block;
     width: 35px;
     height: 35px;
-    background: url(../img2/consult.png) no-repeat;
+    background: url(/static/img2/consult.png) no-repeat;
     margin: 0 auto;
 }
 
@@ -655,7 +655,7 @@ tab_box
 .consult_app_sj {
     width: 8px;
     height: 17px;
-    background: url(../img/headico.png) -97px -3px no-repeat;
+    background: url(/static/img/headico.png) -97px -3px no-repeat;
     position: absolute;
     z-index: 2;
     top: 36px;
@@ -848,13 +848,13 @@ tab_box
    
 }
 .icon1{
-	background:url(../img/footer_icon.png)-104px 0 no-repeat;
+	background:url(/static/img/footer_icon.png)-104px 0 no-repeat;
 }
 .icon2{
-	background:url(../img/footer_icon.png)-52px 0 no-repeat;
+	background:url(/static/img/footer_icon.png)-52px 0 no-repeat;
 }
 .icon3{
-	background:url(../img/footer_icon.png)0px 0 no-repeat;
+	background:url(/static/img/footer_icon.png)0px 0 no-repeat;
 }
 .foot_miu{
 	background: #414141;
@@ -932,7 +932,7 @@ tab_box
 }
 
 .par1 a{
-	background:url(../img/partner_icon.png) no-repeat;
+	background:url(/static/img/partner_icon.png) no-repeat;
 	width: 18px;
     height: 20px;
     background-position: 0 0;
@@ -941,15 +941,15 @@ tab_box
 	float: left;
     width: 31px;
     height: 19px;
-    background: url(../img/partner_icon.png)no-repeat;
+    background: url(/static/img/partner_icon.png)no-repeat;
     background-position: -199px 0;
 }
 .par1 a:hover{
-	background: url(../img/footer_h.png);
+	background: url(/static/img/footer_h.png);
     background-position: 0 0;
 }
 .par2 a:hover span{
-	background: url(../img/footer_h.png);
+	background: url(/static/img/footer_h.png);
     background-position: -209px 0;
 }
 .par2 a:hover{
@@ -959,11 +959,11 @@ tab_box
     background-position: 0 0;
 }
 .par4 a:hover {
-    background: url(../img/footer_h.png);
+    background: url(/static/img/footer_h.png);
     background-position: -127px 0;
 }
 .par5 a:hover {
-    background: url(../img/footer_h.png);
+    background: url(/static/img/footer_h.png);
     background-position: -66px 0;
 }
 .par6 a:hover {
@@ -973,26 +973,26 @@ tab_box
 .par3 a{
 	width: 68px;
     height: 22px;
-    background: url(../img/footer.png);
+    background: url(/static/img/footer.png);
     background-position: 0 -24px; 
     
 } 
 .par4 a {
     width: 72px;
     height: 31px;
-    background: url(../img/partner_icon.png);
+    background: url(/static/img/partner_icon.png);
     background-position: -127px 0;
 }
     
 .par5 a {
     width: 60px;
     height: 23px;
-    background: url(../img/partner_icon.png);
+    background: url(/static/img/partner_icon.png);
     background-position: -66px 0;   
 }
 .par6 a {
     width: 77px;
     height: 23px;
-    background: url(../img/footer.png);
+    background: url(/static/img/footer.png);
     background-position: -77px -23px;
 }

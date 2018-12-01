@@ -32,7 +32,7 @@
 	display: inline-block;
     width: 14px;
     height: 14px;
-    background: url(../img/listico.gif)0 -14px no-repeat;
+    background: url(/static/img/listico.gif)0 -14px no-repeat;
     /*position: absolute;*/
     /*left: 0;
     top: 7px;*/
@@ -90,5 +90,5 @@
   	width: 120px;
   	height: 37px;
   	display: block;
-  	background: url(../img/pic_add_shopping.gif) -10px 0 no-repeat;
+  	background: url(/static/img/pic_add_shopping.gif) -10px 0 no-repeat;
 }

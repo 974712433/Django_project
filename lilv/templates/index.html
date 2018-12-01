@@ -1,16 +1,17 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
-		<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="{% static '/css/reset.css' %}"/>
+		<link rel="stylesheet" type="text/css" href="{% static '/css/index.css' %}"/>
 		
 			
 		<!--轮播大图-->
-		<script src="../js/jquery-1.12.3.js"></script>
-		<script src="../js/jquery.cookie.js"></script>
-		<script src="../js/index.js"></script>
+		<script src="{% static '/js/jquery-1.12.3.js' %}"></script>
+		<script src="{% static '/js/jquery.cookie.js' %}"></script>
+		<script src="{% static '/js/index.js' %}"></script>
 		
 	</head>
 	<body>
@@ -18,17 +19,17 @@
 			<div class="contaier" style="height:35px;">
 				<div class="top_l">
 					<div id="App">
-						<span style="background: url(../img/headico.png)0px -2px no-repeat;width:40px;height:35px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+						<span style="background: url({% static '/img/headico.png' %})0px -2px no-repeat;width:40px;height:35px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 						<span style="border-right:1px solid #ccc;padding-right:15px;padding-left:2px;">4000-250-630</span>
 						<span id="saoma11">
-							<a href=""  style="background: url(../img/headico.png)-20px -2px no-repeat;width:40px;height:35px;margin-left:15px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+							<a href=""  style="background: url({% static '/img/headico.png' %})-20px -2px no-repeat;width:40px;height:35px;margin-left:15px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
 							<a href="" title="下载美西APP">下载美西APP</a>
 						</span>
 					</div>
 					
 					<div id="headerApp_m">
 		                <div class="header_sj"></div>
-		                <div class="headerApp_code"><a href="" title="下载美西APP"><img src="../img/ewm_indexTop_1.png" style="display:block;">扫码下载</a></div>
+		                <div class="headerApp_code"><a href="" title="下载美西APP"><img src="{% static '/img/ewm_indexTop_1.png' %}" style="display:block;">扫码下载</a></div>
 		            </div>
 					
 				</div>
@@ -40,7 +41,7 @@
 					</span>
 					<span id="shop">
 						<a href="" class="relative" title="购物袋" style="margin-left: 18px;padding-left: 20px;border-left: solid 1px #d9d9d9;">    
-							<span style="background: url(../img/headico.png)-37px -2px no-repeat;height:35px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+							<span style="background: url({% static '/img/headico.png' %})-37px -2px no-repeat;height:35px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 							购物袋（<i id="total_num">0</i>）
 						</a>
 						
@@ -93,13 +94,13 @@
 		<div id="logo" class="relative">
 			<div class="contaier relative" >
 				<a href="" title="美西">
-					<img src="../img/logo.png"/ style="padding-top:35px;height:60px;width: 220px;display: inline-block;" alt="美西">
+					<img src="{% static '/img/logo.png' %}" style="padding-top:35px;height:60px;width: 220px;display: inline-block;" alt="美西">
 					
 				</a>
 				<div class="absolute" style="width:250px;right:10px;top:40px;">
 					<input type="text" id="" value="" placeholder="请输入关键字" style="font-size:12px;height:28px;border:0;border-bottom:1px solid #e8e8e8;color:#6c6c6c;width:165px;outline:none;"/>
 					<button class="absolute" style="border:0;width: 30px;height:25px;background: white;outline:none;right:32px;top:5px;">
-						<a href="" style="display:inline-block;height:20px;width:20px;background:url(../img/headico.png)-60px 0 no-repeat;"></a>
+						<a href="" style="display:inline-block;height:20px;width:20px;background:url({% static '/img/headico.png' %})-60px 0 no-repeat;"></a>
 					</button>
 				</div>
 			</div>
@@ -114,7 +115,7 @@
 					<li><a href="" title="全球购">全球购</a></li>
 					<li><a href="list.html" title="女士" id="menu2">女士</a></li>
 					<li><a href="" title="男仕" id="menu3">男仕</a></li>
-					<li><a href="" title="童装"id="menu4" >童装</a></li>
+					<li><a href="" title="童装" id="menu4" >童装</a></li>
 					<li><a href="" title="腕表" id="menu5">腕表</a></li>
 					<li><a href="" title="品牌" id="menu6">品牌</a></li>
 					<li><a href="" title="Mzine">Mzine</a></li>
@@ -356,7 +357,7 @@
 			            <div class="consult_app_m">
 			                <div class="consult_app_sj"></div>
 			                <div class="consult_app_code">
-			                    <img src="../img2/ewm_indexTop_1.png" style="display:block;">
+			                    <img src="{% static '/img2/ewm_indexTop_1.png' %}" style="display:block;">
 			                </div>
 			            </div>
 			        </li>
@@ -421,7 +422,7 @@
 						</ul>
 						<div class="tab_content tab_show">
 							<a href="" title="纪梵希 潮牌代名词">
-								<img src="../img/13260859cdd97002a9e.jpg"/>
+								<img src="{% static '/img/13260859cdd97002a9e.jpg' %}"/>
 								<div class="sing_code absolute">
 									<p style="font-size:20px;font-weight:bolder;">Givenchy</p>
 									<br />
@@ -433,7 +434,7 @@
 								</div>
 							</a>
 							<a href="" title="Volley Austrelia 王菲都在穿的运动鞋" style="margin:0 6px;">
-								<img src="../img/13271959cdd9b78b2e5.jpg"/>
+								<img src="{% static '/img/13271959cdd9b78b2e5.jpg' %}"/>
 								<div class="sing_code absolute" style="left:500px">
 									<p style="font-size:20px;font-weight:bolder;">Volley Austrelia</p>
 									<br />
@@ -445,7 +446,7 @@
 								</div>
 							</a>
 							<a href="" title="MCM 包袋潮流风向标">
-								<img src="../img/13270959cdd9ad660c6.jpg"/>
+								<img src="{% static '/img/13270959cdd9ad660c6.jpg' %}"/>
 								<div class="sing_code absolute" style="left:900px">
 									<p style="font-size:20px;font-weight:bolder;">MCM</p>
 									<br />
@@ -459,7 +460,7 @@
 						</div>
 						<div class="tab_content relative">
 							<a href="" title="背影杀手双肩包  KENZO、D&G" >
-								<img src="../img/13295059cdda4e1a00f.jpg"/>
+								<img src="{% static '/img/13295059cdda4e1a00f.jpg' %}"/>
 								<div class="sing_code absolute">
 									<p style="font-size:20px;font-weight:bolder;">KENZO、D&G</p>
 									<br />
@@ -471,7 +472,7 @@
 								</div>
 							</a>
 							<a href="" title="伦敦潮鞋 新晋街头时尚品牌" style="margin:0 6px;">
-								<img src="../img/13312759cddaaf48c47.jpg"/>
+								<img src="{% static '/img/13312759cddaaf48c47.jpg' %}"/>
 								<div class="sing_code absolute" style="left:500px">
 									<p style="font-size:20px;font-weight:bolder;">D&G</p>
 									<br />
@@ -483,7 +484,7 @@
 								</div>
 							</a>
 							<a href="" title="纪梵希 潮牌代名词 ">
-								<img src="../img/13313159cddab301934.jpg"/>
+								<img src="{% static '/img/13313159cddab301934.jpg' %}"/>
 								<div class="sing_code absolute" style="left:900px">
 									<p style="font-size:20px;font-weight:bolder;">Givenchy</p>
 									<br />
@@ -498,7 +499,7 @@
 						</div>
 						<div class="tab_content relative">
 							<a href="" title="潮牌平底鞋暴走伦敦时装周">
-								<img src="../img/13334959cddb3d35258.jpg"/>
+								<img src="{% static '/img/13334959cddb3d35258.jpg' %}"/>
 								<div class="sing_code absolute">
 									<p style="font-size:20px;font-weight:bolder;">D&G</p>
 									<br />
@@ -510,7 +511,7 @@
 								</div>
 							</a>
 							<a href="" title="凹造型墨镜一秒小脸">
-								<img src="../img/13351359cddb9113fa1.jpg" style="margin:0 6px;"/>
+								<img src="{% static '/img/13351359cddb9113fa1.jpg' %}" style="margin:0 6px;"/>
 								<div class="sing_code absolute" style="left:500px">
 									<p style="font-size:20px;font-weight:bolder;">KENZO、D&G</p>
 									<br />
@@ -522,7 +523,7 @@
 								</div>
 							</a>
 							<a href="" title="造型雨伞 让你爱上下雨天">
-								<img src="../img/13353959cddbab6371f.jpg"/>
+								<img src="{% static '/img/13353959cddbab6371f.jpg' %}"/>
 								<div class="sing_code absolute" style="left:900px">
 									<p style="font-size:20px;font-weight:bolder;">MCM</p>
 									<br />
@@ -556,7 +557,7 @@
 							    <ul class="hotflagbox" style="width:1200px;margin:0 auto;overflow:hidden;">
 							        <li>
 							            <div class="hotflagson">
-							                <img src="../img3/147669863333_214x108.jpg" alt="By Creations柏品">
+							                <img src="{% static '/img3/147669863333_214x108.jpg' %}" alt="By Creations柏品">
 							                <div class="hotmiddle" style="opacity: 0;">
 							                    <a href="" target="_blank">
 							                        <p class="brandchnname">柏品</p>
@@ -565,13 +566,13 @@
 							                        </div>
 							                    </a>
 							                </div>
-							                <div class="topline" style="width: 0px;"></div>
-							                <div class="rightline" style="height: 0px;"></div>
-							                <div class="bottomline" style="width: 0px;"></div>
-							                <div class="leftline" style="height: 0px;"></div>
+							                <div class="topline" style="width: 0;"></div>
+							                <div class="rightline" style="height: 0;"></div>
+							                <div class="bottomline" style="width: 0;"></div>
+							                <div class="leftline" style="height: 0;"></div>
 							            </div>
 							            <div class="hotflagson">
-							                <img src="../img3/14477274206917.png" alt="Bobbi Brown波比布朗">
+							                <img src="{% static '/img3/14477274206917.png' %}" alt="Bobbi Brown波比布朗">
 							                <div class="hotmiddle" style="opacity: 0;">
 							                    <a href="" target="_blank">
 							                        <p class="brandchnname">波比布朗</p>
@@ -586,7 +587,7 @@
 							                <div class="leftline" style="height: 0px;"></div>
 							            </div>
 							            <div class="hotflagson">
-							                <img src="../img3/147635292315_214x108.jpg" alt="Rolex劳力士">
+							                <img src="{% static '/img3/147635292315_214x108.jpg' %}" alt="Rolex劳力士">
 							                <div class="hotmiddle" style="opacity: 0;">
 							                    <a href="http://www.5lux.com/flagship/detail/54" target="_blank">
 							                        <p class="brandchnname">劳力士</p>
@@ -601,7 +602,7 @@
 							                <div class="leftline" style="height: 0px;"></div>
 							            </div>
 							            <div class="hotflagson">
-							                <img src="../img3/14477306892349.png" alt="Dolce&amp;Gabbana（D&amp;G）">
+							                <img src="{% static '/img3/14477306892349.png' %}" alt="Dolce&amp;Gabbana（D&amp;G）">
 							                <div class="hotmiddle" style="opacity: 0;">
 							                    <a href="http://www.5lux.com/flagship/detail/24" target="_blank">
 							                        <p class="brandchnname">杜嘉班纳</p>
@@ -616,7 +617,7 @@
 							                <div class="leftline" style="height: 0px;"></div>
 							            </div>
 							            <div class="hotflagson">
-							                <img src="../img3/14477391399663.png" alt="La Mer海蓝之谜">
+							                <img src="{% static '/img3/14477391399663.png' %}" alt="La Mer海蓝之谜">
 							                <div class="hotmiddle" style="opacity: 0;">
 							                    <a href="http://www.5lux.com/flagship/detail/48" target="_blank">
 							                        <p class="brandchnname">海蓝之谜</p>
@@ -631,7 +632,7 @@
 							                <div class="leftline" style="height: 0px;"></div>
 							            </div>
 							            <div class="hotflagson">
-							                <img src="../img3/14477258985459.png" alt="Armani阿玛尼">
+							                <img src="{% static '/img3/14477258985459.png' %}" alt="Armani阿玛尼">
 							                <div class="hotmiddle" style="opacity: 0;">
 							                    <a href="http://www.5lux.com/flagship/detail/3" target="_blank">
 							                        <p class="brandchnname">阿玛尼</p>
@@ -646,7 +647,7 @@
 							                <div class="leftline" style="height: 0px;"></div>
 							            </div>
 							            <div class="hotflagson" style="margin-right: 0;">
-							                <img src="../img3/14477314136401.png" alt="Ferragamo菲拉格慕">
+							                <img src="{% static '/img3/14477314136401.png' %}" alt="Ferragamo菲拉格慕">
 							                <div class="hotmiddle" style="opacity: 0;">
 							                    <a href="http://www.5lux.com/flagship/detail/19" target="_blank">
 							                        <p class="brandchnname">菲拉格慕</p>
@@ -661,7 +662,7 @@
 							                <div class="leftline" style="height: 0px;"></div>
 							            </div>
 							            <div class="hotflagson">
-							                <img src="../img3/14477391395609.png" alt="KIEHL&#39;S  科颜氏">
+							                <img src="{% static '/img3/14477391395609.png' %}" alt="KIEHL&#39;S  科颜氏">
 							                <div class="hotmiddle" style="opacity: 0;">
 							                    <a href="http://www.5lux.com/flagship/detail/55" target="_blank">
 							                        <p class="brandchnname">科颜氏</p>
@@ -676,7 +677,7 @@
 							                <div class="leftline" style="height: 0px;"></div>
 							            </div>
 							            <div class="hotflagson">
-							                <img src="../img3/14477284519867.png" alt="Bvlgari宝格丽">
+							                <img src="{% static '/img3/14477284519867.png' %}" alt="Bvlgari宝格丽">
 							                <div class="hotmiddle" style="opacity: 0;">
 							                    <a href="http://www.5lux.com/flagship/detail/31" target="_blank">
 							                        <p class="brandchnname">宝格丽</p>
@@ -691,7 +692,7 @@
 							                <div class="leftline" style="height: 0px;"></div>
 							            </div>
 							            <div class="hotflagson">
-							                <img src="../img3/14477318724845.png" alt="Gucci古驰">
+							                <img src="{% static '/img3/14477318724845.png' %}" alt="Gucci古驰">
 							                <div class="hotmiddle" style="opacity: 0;">
 							                    <a href="http://www.5lux.com/flagship/detail/37" target="_blank">
 							                        <p class="brandchnname">古驰</p>
@@ -706,7 +707,7 @@
 							                <div class="leftline" style="height: 0px;"></div>
 							            </div>
 							            <div class="hotflagson">
-							                <img src="../img3/14524832304110.png" alt="Theonne">
+							                <img src="{% static '/img3/14524832304110.png' %}" alt="Theonne">
 							                <div class="hotmiddle" style="opacity: 0;">
 							                    <a href="http://www.5lux.com/flagship/detail/84" target="_blank">
 							                        <p class="brandchnname">Theonne</p>
@@ -721,7 +722,7 @@
 							                <div class="leftline" style="height: 0px;"></div>
 							            </div>
 							            <div class="hotflagson">
-							                <img src="../img3/14479263905429.png" alt="Rebecca Minkoff 瑞贝卡·明可弗">
+							                <img src="{% static '/img3/14479263905429.png' %}" alt="Rebecca Minkoff 瑞贝卡·明可弗">
 							                <div class="hotmiddle" style="opacity: 0;">
 							                    <a href="http://www.5lux.com/flagship/detail/83" target="_blank">
 							                        <p class="brandchnname">瑞贝卡·明可弗</p>
@@ -736,7 +737,7 @@
 							                <div class="leftline" style="height: 0px;"></div>
 							            </div>
 							            <div class="hotflagson">
-							                <img src="../img3/14477430744531.png" alt="police">
+							                <img src="{% static '/img3/14477430744531.png' %}" alt="police">
 							                <div class="hotmiddle" style="opacity: 0;">
 							                    <a href="http://www.5lux.com/flagship/detail/106" target="_blank">
 							                        <p class="brandchnname">POLICE </p>
@@ -751,7 +752,7 @@
 							                <div class="leftline" style="height: 0px;"></div>
 							            </div>
 							            <div class="hotflagson" style="margin-right: 0;">
-							                <img src="../img3/147255231014_214x108.png" alt="Refa">
+							                <img src="{% static '/img3/147255231014_214x108.png' %}" alt="Refa">
 							                <div class="hotmiddle" style="opacity: 0;">
 							                    <a href="http://www.5lux.com/flagship/detail/96" target="_blank">
 							                        <p class="brandchnname">Refa</p>
@@ -766,7 +767,7 @@
 							                <div class="leftline" style="height: 0px;"></div>
 							            </div>
 							            <div class="hotflagson">
-							                <img src="../img3/147418184838_214x108.jpg" alt="LuckyOzasec欧泽斯">
+							                <img src="{% static '/img3/147418184838_214x108.jpg' %}" alt="LuckyOzasec欧泽斯">
 							                <div class="hotmiddle" style="opacity: 0;">
 							                    <a href="http://www.5lux.com/flagship/detail/95" target="_blank">
 							                        <p class="brandchnname">LuckyOzasec</p>
@@ -781,7 +782,7 @@
 							                <div class="leftline" style="height: 0px;"></div>
 							            </div>
 							            <div class="hotflagson">
-							                <img src="../img3/14477284508184.png" alt="Brooks Brothers 布克兄弟">
+							                <img src="{% static '/img3/14477284508184.png' %}" alt="Brooks Brothers 布克兄弟">
 							                <div class="hotmiddle" style="opacity: 0;">
 							                    <a href="http://www.5lux.com/flagship/detail/74" target="_blank">
 							                        <p class="brandchnname">布克兄弟</p>
@@ -796,7 +797,7 @@
 							                <div class="leftline" style="height: 0px;"></div>
 							            </div>
 							            <div class="hotflagson">
-							                <img src="../img3/14477462462623.png" alt="TOD&#39;S  托德斯">
+							                <img src="{% static '/img3/14477462462623.png' %}" alt="TOD&#39;S  托德斯">
 							                <div class="hotmiddle" style="opacity: 0;">
 							                    <a href="http://www.5lux.com/flagship/detail/57" target="_blank">
 							                        <p class="brandchnname">托德斯</p>
@@ -811,7 +812,7 @@
 							                <div class="leftline" style="height: 0px;"></div>
 							            </div>
 							            <div class="hotflagson">
-							                <img src="../img3/149007476555_214x108.png" alt="Zimmerli齐穆里">
+							                <img src="{% static '/img3/149007476555_214x108.png' %}" alt="Zimmerli齐穆里">
 							                <div class="hotmiddle" style="opacity: 0;">
 							                    <a href="http://www.5lux.com/flagship/detail/132" target="_blank">
 							                        <p class="brandchnname">齐穆里</p>
@@ -826,7 +827,7 @@
 							                <div class="leftline" style="height: 0px;"></div>
 							            </div>
 							            <div class="hotflagson">
-							                <img src="../img3/14477305449735.png" alt="Dior迪奥">
+							                <img src="{% static '/img3/14477305449735.png' %}" alt="Dior迪奥">
 							                <div class="hotmiddle" style="opacity: 0;">
 							                    <a href="http://www.5lux.com/flagship/detail/79" target="_blank">
 							                        <p class="brandchnname">迪奥</p>
@@ -841,7 +842,7 @@
 							                <div class="leftline" style="height: 0px;"></div>
 							            </div>
 							            <div class="hotflagson">
-							                <img src="../img3/14477425318150.png" alt="Parker派克">
+							                <img src="{% static '/img3/14477425318150.png' %}" alt="Parker派克">
 							                <div class="hotmiddle" style="opacity: 0;">
 							                    <a href="http://www.5lux.com/flagship/detail/51" target="_blank">
 							                        <p class="brandchnname">派克</p>
@@ -856,7 +857,7 @@
 							                <div class="leftline" style="height: 0px;"></div>
 							            </div>
 							            <div class="hotflagson" style="margin-right: 0;">
-							                <img src="../img3/14477320366584.png" alt="Guess">
+							                <img src="{% static '/img3/14477320366584.png' %}" alt="Guess">
 							                <div class="hotmiddle" style="opacity: 0;">
 							                    <a href="http://www.5lux.com/flagship/detail/22" target="_blank">
 							                        <p class="brandchnname">Guess</p>
@@ -980,18 +981,18 @@
 						</ul> 
 						<div id="box1_btn">
 							<ul id="box11">
-								<li style="background:#f7f4ef;"><a href="" title="纪梵希 潮牌代名词"><img src="../img/13260859cdd97002a9e.jpg"/></a></li>
-								<li style="background:#f7f4ef;margin-top:12px;"><a href="" title="Volley Austrelia 王菲都在穿的运动鞋"><img src="../img/13271959cdd9b78b2e5.jpg"/></a></li>
+								<li style="background:#f7f4ef;"><a href="" title="纪梵希 潮牌代名词"><img src="{% static '/img/13260859cdd97002a9e.jpg' %}"/></a></li>
+								<li style="background:#f7f4ef;margin-top:12px;"><a href="" title="Volley Austrelia 王菲都在穿的运动鞋"><img src="{% static '/img/13271959cdd9b78b2e5.jpg' %}"/></a></li>
 								
 							</ul>
 							<ul id="box12">
-								<li style="height:498px;background:#d0cabe;"><a href="" style="height:498px;" title="范思哲 浮华点缀细节"><img src="../img/13263659cdd98c5140d.jpg"/></a></li>
+								<li style="height:498px;background:#d0cabe;"><a href="" style="height:498px;" title="范思哲 浮华点缀细节"><img src="{% static '/img/13263659cdd98c5140d.jpg' %}"/></a></li>
 							</ul>
 							<ul id="box13">
-								<li style="background:#f5f2eb;"><a href="" title="MCM 包袋潮流风向标"><img src="../img/13270959cdd9ad660c6.jpg"/></a></li>
+								<li style="background:#f5f2eb;"><a href="" title="MCM 包袋潮流风向标"><img src="{% static '/img/13270959cdd9ad660c6.jpg' %}"/></a></li>
 								<li style="background:#f7f4ef;margin-top:12px;">
 									<a href="" title="MCM包袋 超人标配时尚单品" style="display:block;margin-top: 12px;">
-										<img src="../img/13271659cdd9b41420c.jpg"/>
+										<img src="{% static '/img/13271659cdd9b41420c.jpg' %}"/>
 									</a>
 								</li>
 							</ul>
@@ -1016,24 +1017,24 @@
 							<ul id="box11">
 								<li style="background:#e8ebf4;">
 									<a href="" title="背影杀手双肩包  KENZO、D&G" >
-										<img src="../img/13295059cdda4e1a00f.jpg"/>
+										<img src="{% static '/img/13295059cdda4e1a00f.jpg' %}"/>
 									</a>
 								</li>
 								<li style="background:#e8ebf4;margin-top:12px;">
 									<a href="" title="伦敦潮鞋 新晋街头时尚品牌" style="display:block;margin-top: 12px;">
-										<img src="../img/13312759cddaaf48c47.jpg"/>
+										<img src="{% static '/img/13312759cddaaf48c47.jpg' %}"/>
 									</a>
 								</li>
 								
 							</ul>
 							<ul id="box12" >
-								<li style="height:498px;background:#cecfd3;"><a href="" style="height:498px;" title="一件夹克穿三季 GCDS、Lanvin"><img src="../img/13302359cdda6f4ec75.jpg"/></a></li>
+								<li style="height:498px;background:#cecfd3;"><a href="" style="height:498px;" title="一件夹克穿三季 GCDS、Lanvin"><img src="{% static '/img/13302359cdda6f4ec75.jpg' %}"/></a></li>
 							</ul>
 							<ul id="box13">
-								<li style="background:#e8ebf4;"><a href="" title="极简风设计师品牌 Aiezen"><img src="../img/13305759cdda914bd97.jpg"/></a></li>
+								<li style="background:#e8ebf4;"><a href="" title="极简风设计师品牌 Aiezen"><img src="{% static '/img/13305759cdda914bd97.jpg' %}"/></a></li>
 								<li style="background:#e8ebf4;margin-top:12px;">
 									<a href="" title="纪梵希 潮牌代名词" style="display:block;margin-top: 12px;">
-										<img src="../img/13313159cddab301934.jpg"/>
+										<img src="{% static '/img/13313159cddab301934.jpg' %}"/>
 									</a>
 								</li>
 							</ul>
@@ -1057,25 +1058,25 @@
 						</div>
 						<div id="box1_btn">
 							<ul id="box11">
-								<li style="background:#fff7f8;"><a href="" title="潮牌平底鞋暴走伦敦时装周"><img src="../img/13334959cddb3d35258.jpg"/></a></li>
+								<li style="background:#fff7f8;"><a href="" title="潮牌平底鞋暴走伦敦时装周"><img src="{% static '/img/13334959cddb3d35258.jpg' %}"/></a></li>
 								<li style="background:#fef8f8;margin-top:12px;">
 									<a href="" title="凹造型墨镜一秒小脸" style="display:block;margin-top: 12px;">
-										<img src="../img/13351359cddb9113fa1.jpg"/>
+										<img src="{% static '/img/13351359cddb9113fa1.jpg' %}"/>
 									</a>
 								</li>
 								
 							</ul>
 							<ul id="box12">
-								<li style="height:498px;background:url(../img/1.jpg)repeat-x;">
+								<li style="height:498px;background:url({% static '/img/1.jpg' %})repeat-x;">
 									<a href="" style="height:498px;" title="欢愉色彩轻奢包袋">
-										<img src="../img/13341859cddb5a2a903.jpg"/>
+										<img src="{% static '/img/13341859cddb5a2a903.jpg' %}"/>
 									</a></li>
 							</ul>
 							<ul id="box13">
-								<li style="background:#fff7f8;"><a href="" title="MSGM 潮人衣橱专场"><img src="../img/13344659cddb7668419.jpg"/></a></li>
+								<li style="background:#fff7f8;"><a href="" title="MSGM 潮人衣橱专场"><img src="{% static '/img/13344659cddb7668419.jpg' %}"/></a></li>
 								<li style="background:#fef8f8;margin-top:12px;">
 									<a href="" title="造型雨伞 让你爱上下雨天" style="display:block;margin-top: 12px;">
-										<img src="../img/13353959cddbab6371f.jpg"/>
+										<img src="{% static '/img/13353959cddbab6371f.jpg' %}"/>
 									</a>
 								</li>
 							<ul>
@@ -1104,8 +1105,8 @@
 								<ul id="list_small">
 								
 								</ul>
-								<div id="prev_left"><img src="../img/pre_btn.png" style="padding-top:100px;"/></div>
-								<div id="next_right"><img src="../img/next_btn.png" style="padding-top:100px;"/></div>
+								<div id="prev_left"><img src="{% static '/img/pre_btn.png' %}" style="padding-top:100px;"/></div>
+								<div id="next_right"><img src="{% static '/img/next_btn.png' %}" style="padding-top:100px;"/></div>
 							</div>
 						</div>
 					</div>
@@ -1160,7 +1161,7 @@
 									<span style="font-size:14px;color: #333;">美西APP</span>
 									<div style="margin-top:20px;border:1px solid #e8e8e8;padding:20px;">
 										<span style="display:block;width:67px;height:67px;">
-											<img src="../img/down_app.png"/>
+											<img src="{% static '/img/down_app.png' %}"/>
 										</span>
 									</div>
 									
@@ -1169,7 +1170,7 @@
 									<span style="font-size:14px;color: #333;">官方微信</span>
 									<div style="margin-top:20px;border:1px solid #e8e8e8;padding:20px;">
 										<span style="display:block;width:67px;height:67px;">
-											<img src="../img/wechat.png"/>
+											<img src="{% static '/img/wechat.png' %}"/>
 										</span>
 									</div>
 									
