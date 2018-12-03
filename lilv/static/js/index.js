@@ -1,8 +1,9 @@
 
+
 $(function(){
 				
 	//先获取轮播图的数据
-	$.get("../json/lunbo.json", function(data){
+	$.get("static/json/lunbo.json", function(data){
 //		大图
 		var arr = data;
 		for (var i=0; i<arr.length; i++) {
@@ -15,7 +16,7 @@ $(function(){
 		lunbo();
 		
 	})
-	$.get("../json/lunbo1.json", function(data1){
+	$.get("static/json/lunbo.json", function(data1){
 		var arr1 = data1;
 		for (var j=0; j<arr1.length; j++) {
 			var obj1 = arr1[j];

@@ -1,16 +1,17 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
-		<link rel="stylesheet" type="text/css" href="../css/good.css"/>
+		<link rel="stylesheet" type="text/css" href="{% static '/css/reset.css' %}"/>
+		<link rel="stylesheet" type="text/css" href="{% static '/css/good.css' %}"/>
 			
 		<!--轮播大图-->
-		<script src="../js/jquery-1.12.3.js"></script>
-		<script src="../js/jquery.cookie.js"></script>
+		<script src="{% static '/js/jquery-1.12.3.js' %}"></script>
+		<script src="{% static '/js/jquery.cookie.js' %}"></script>
 		
-		<script src="../js/good.js"></script>
+		<script src="{% static '/js/good.js' %}"></script>
 		
 		
 	</head>
@@ -20,27 +21,27 @@
 				<div class="contaier" style="height:35px;">
 					<div class="top_l">
 						<div id="App">
-							<span style="background: url(../img/headico.png)0px -2px no-repeat;width:40px;height:35px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+							<span style="background: url({% static '/img/headico.png' %})0px -2px no-repeat;width:40px;height:35px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 							<span style="border-right:1px solid #ccc;padding-right:15px;padding-left:2px;">4000-250-630</span>
-							<a href="" style="background: url(../img/headico.png)-20px -2px no-repeat;width:40px;height:35px;margin-left:15px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+							<a href="" style="background: url({% static '/img/headico.png' %})-20px -2px no-repeat;width:40px;height:35px;margin-left:15px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
 							<a href="" title="下载美西APP">下载美西APP</a>
 						</div>
 						
 						<div id="headerApp_m">
 			                <div class="header_sj"></div>
-			                <div class="headerApp_code"><a href="" title="下载美西APP"><img src="../img/ewm_indexTop_1.png" style="display: block;">扫码下载</a></div>
+			                <div class="headerApp_code"><a href="" title="下载美西APP"><img src="{% static '/img/ewm_indexTop_1.png' %}" style="display: block;">扫码下载</a></div>
 			            </div>
 						
 					</div>
 					<div class="top_r">
 						<span>
-							<a href="login.html" title="登录" class="top_r_load">登录</a>
-							<a href="register.html" title="注册">注册</a>
+							<a href="{% url 'fashion:login' %}" title="登录" class="top_r_load">登录</a>
+							<a href="{% url 'fashion:register' %}" title="注册">注册</a>
 							
 						</span>
 						<span id="shop">
-							<a href="car.html" class="relative" title="购物袋" style="margin-left: 18px;padding-left: 20px;border-left: solid 1px #d9d9d9;">    
-								<span style="background: url(../img/headico.png)-37px -2px no-repeat;height:35px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+							<a href="{% url 'fashion:car' %}" class="relative" title="购物袋" style="margin-left: 18px;padding-left: 20px;border-left: solid 1px #d9d9d9;">
+								<span style="background: url({% static '/img/headico.png' %})-37px -2px no-repeat;height:35px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 								购物袋（<i id="total_num">0</i>）
 							</a>
 							
@@ -76,7 +77,7 @@
 											<span class="totalprice">11</span>
 										</div>
 										<div class="to_r">
-											<a href="car.html" class="settlement" style="font-size:18px;color: white;">现在就结算</a>
+											<a href="{% url 'fashion:car' %}" class="settlement" style="font-size:18px;color: white;">现在就结算</a>
 										</div>
 									</div>
 								</div>
@@ -92,13 +93,13 @@
 			<div id="logo" class="relative">
 				<div class="contaier relative" >
 					<a href="index.html" title="美西">
-						<img src="../img/logo.png"/ style="padding-top:35px;height:60px;width: 220px;display: inline-block;" alt="美西">
+						<img src="{% static '/img/logo.png' %}" style="padding-top:35px;height:60px;width: 220px;display: inline-block;" alt="美西">
 						
 					</a>
 					<div class="absolute" style="width:250px;right:10px;top:40px;">
 						<input type="text" id="" value="" placeholder="请输入关键字" style="font-size:12px;height:28px;border:0;border-bottom:1px solid #e8e8e8;color:#6c6c6c;width:165px;outline:none;"/>
 						<button class="absolute" style="border:0;width: 30px;height:25px;background: white;outline:none;right:32px;top:5px;">
-							<a href="" style="display:inline-block;height:20px;width:20px;background:url(../img/headico.png)-60px 0 no-repeat;"></a>
+							<a href="" style="display:inline-block;height:20px;width:20px;background:url({% static '/img/headico.png' %})-60px 0 no-repeat;"></a>
 						</button>
 					</div>
 				</div>
@@ -229,7 +230,7 @@
 				                <ul>
 				                    <li class="hnsTit"><a href="" title="鞋履 Shoes">鞋履 Shoes</a></li>
 				                    <li><a href="" title="所有鞋履">所有鞋履</a></li>
-				                    <li><a href="" title="平底鞋 Flat Shoes"平>平底鞋 Flat Shoes</a></li>
+				                    <li><a href="" title="平底鞋 Flat Shoes">平底鞋 Flat Shoes</a></li>
 				                    <li><a href="" title="休闲皮鞋 Casual Shoes">休闲皮鞋 Casual Shoes</a></li>
 				                    <li><a href="" title="正装皮鞋 Business Shoes">正装皮鞋 Business Shoes</a></li>
 				                </ul>
@@ -366,43 +367,43 @@
 			                            	</li>
 			                            	<li class="list_edit">
 			                        			<a class="" picnum="2" href="javascript:void(0);" rel="{-123359-2-123359-2.jpg&#39;}">
-			                        				<img src="../good_img/h-123359-2.jpg"  alt="" width="50" height="60">
+			                        				<img src="{% static '/good_img/h-123359-2.jpg' %}"  alt="" width="50" height="60">
 			                        			</a>
 			                            	</li>
 			                    			<li class="list_edit">
 			                    				<a class="" picnum="3" href="javascript:void(0);" rel="{-123359-3-123359-3.jpg&#39;}">
-			                    					<img src="../good_img/h-123359-3.jpg"  alt="" width="50" height="60">
+			                    					<img src="{% static '/good_img/h-123359-3.jpg' %}"  alt="" width="50" height="60">
 			                    			
 			                    				</a>
 			                    			</li>
 			                    			<li class="list_edit">
 			                    				<a class="" picnum="4" href="javascript:void(0);" rel="{-123359-4-123359-4.jpg&#39;}">
-			                    					<img src="../good_img/h-123359-4.jpg"  alt="" width="50" height="60">
+			                    					<img src="{% static '/good_img/h-123359-4.jpg' %}"  alt="" width="50" height="60">
 			                    				</a>
 			                    			</li>
 			                    			<li class="list_edit">
 			                    				<a class="" picnum="5" href="javascript:void(0);" rel="{-123359-5-123359-5.jpg&#39;}">
-			                    					<img src="../good_img/h-123359-5.jpg"  alt="" width="50" height="60">
+			                    					<img src="{% static '/good_img/h-123359-5.jpg' %}"  alt="" width="50" height="60">
 			                    				</a>
 			                    			</li>
 			                				<li class="list_edit">
 			                					<a class="" picnum="6" href="javascript:void(0);" rel="{-123359-6-123359-6.jpg&#39;}">
-			                						<img src="../good_img/h-123359-6.jpg"  alt="" width="50" height="60">
+			                						<img src="{% static '/good_img/h-123359-6.jpg' %}"  alt="" width="50" height="60">
 			                					</a>
 			                				</li>
 			                				<li class="list_edit">
 			                					<a class="" picnum="7" href="javascript:void(0);" rel="{-123359-7-123359-7.jpg&#39;}">
-			                						<img src="../good_img/h-123359-7.jpg"  alt="" width="50" height="60">
+			                						<img src="{% static '/good_img/h-123359-7.jpg' %}"  alt="" width="50" height="60">
 			                					</a>
 			                				</li>
 			                				<li class="list_edit">
 			    								<a class="" picnum="8" href="javascript:void(0);" rel="{-123359-8-123359-8.jpg&#39;}">
-			                						<img src="../good_img/h-123359-8.jpg"  alt="" width="50" height="60">
+			                						<img src="{% static '/good_img/h-123359-8.jpg' %}"  alt="" width="50" height="60">
 			                					</a>
 			                				</li>
 			                    			<li class="list_edit">
 			                    				<a class="" picnum="9" href="javascript:void(0);" rel="{-123359-9-123359-9.jpg&#39;}">
-			                    					<img src="../good_img/h-123359-9.jpg"  alt="" width="50" height="60">
+			                    					<img src="{% static '/good_img/h-123359-9.jpg' %}"  alt="" width="50" height="60">
 			                    				</a>
 			                    			</li>
 			                            </ul>
@@ -413,12 +414,12 @@
 			                <div class="pro_img">
 			                	<a class="jqzoom" href="javascript:void(0);" title="" style="outline-style: none; text-decoration: none;">
 			                		<div id="smallImg">
-										<img class="zoomPad_img" src="../good_img/h-123359-1.jpg" height="460"  width="383"/>
+										<img class="zoomPad_img" src="{% static '/good_img/h-123359-1.jpg' %}" height="460"  width="383"/>
 										<div id="smallArea"></div>
 									</div>
 									
 									<div id="bigArea">
-										<img id="bigImg" src="../good_img/h-123359-1.jpg" height="960"  width="800"/>
+										<img id="bigImg" src="{% static '/good_img/h-123359-1.jpg' %}" height="960"  width="800"/>
 									</div>
 			                		
 			                	</a>
@@ -556,8 +557,8 @@
 							<div id="good_small">
 								<ul id="good_list1" class="clearfix" style="margin: 0px; padding: 0px; position: relative;z-index: 1; width: 5240px; left: -1048px;">
 								</ul>
-								<div id="cart_prev"><img src="../img/pre_btn.png" style="padding-top:100px;"/></div>
-								<div id="cart_next"><img src="../img/next_btn.png" style="padding-top:100px;"/></div>
+								<div id="cart_prev"><img src="{% static '/img/pre_btn.png' %}" style="padding-top:100px;"/></div>
+								<div id="cart_next"><img src="{% static '/img/next_btn.png' %}" style="padding-top:100px;"/></div>
 							</div>
 						</div>
 						
@@ -644,7 +645,7 @@
 			                            <td>
 			                                <div class="proBrand_r">
 			                                    <div class="proBrand_r_line"></div>
-			                                    <img src="../good_img/450.jpg">
+			                                    <img src="{% static '/good_img/450.jpg' %}">
 			                                    <a class="moreBrandCon" href="" style="color: #666;font-size:12px;">查看更多品牌商品</a>
 			                                </div>
 			                            </td>
@@ -664,15 +665,15 @@
 					    </div>
 					    <div class="proImg">
 		                    <ul class="clearfix">
-		                    	<li><img src="../good_img/h-123359-1.jpg" width="485"></li>
-	                    		<li><img src="../good_img/h-123359-2.jpg" width="485"></li>
-	                    		<li><img src="../good_img/h-123359-3.jpg" width="485"></li>
-	                    		<li><img src="../good_img/h-123359-4.jpg" width="485"></li>
-	                    		<li><img src="../good_img/h-123359-5.jpg" width="485"></li>
-	                    		<li><img src="../good_img/h-123359-6.jpg" width="485"></li>
-	                    		<li><img src="../good_img/h-123359-7.jpg" width="485"></li>
-	                    		<li><img src="../good_img/h-123359-8.jpg" width="485"></li>
-	                    		<li><img src="../good_img/h-123359-9.jpg" width="485"></li>
+		                    	<li><img src="{% static '/good_img/h-123359-1.jpg' %}" width="485"></li>
+	                    		<li><img src="{% static '/good_img/h-123359-2.jpg' %}" width="485"></li>
+	                    		<li><img src="{% static '/good_img/h-123359-3.jpg' %}" width="485"></li>
+	                    		<li><img src="{% static '/good_img/h-123359-4.jpg' %}" width="485"></li>
+	                    		<li><img src="{% static '/good_img/h-123359-5.jpg' %}" width="485"></li>
+	                    		<li><img src="{% static '/good_img/h-123359-6.jpg' %}" width="485"></li>
+	                    		<li><img src="{% static '/good_img/h-123359-7.jpg' %}" width="485"></li>
+	                    		<li><img src="{% static '/good_img/h-123359-8.jpg' %}" width="485"></li>
+	                    		<li><img src="{% static '/good_img/h-123359-9.jpg' %}" width="485"></li>
 		                    </ul>
 		                </div>
 
@@ -862,8 +863,8 @@
 							<div id="like_small">
 								<ul id="like_list" class="clearfix" style="margin: 0px; padding: 0px; position: relative;z-index: 1; width: 5240px; left: -1048px;">
 								</ul>
-								<div id="car_prev"><img src="../img/pre_btn.png" style="padding-top:100px;"/></div>
-								<div id="car_next"><img src="../img/next_btn.png" style="padding-top:100px;"/></div>
+								<div id="car_prev"><img src="{% static '/img/pre_btn.png' %}" style="padding-top:100px;"/></div>
+								<div id="car_next"><img src="{% static '/img/next_btn.png' %}" style="padding-top:100px;"/></div>
 							</div>
 						</div>
 					</div>
@@ -881,7 +882,7 @@
 				            <div class="consult_app_m">
 				                <div class="consult_app_sj"></div>
 				                <div class="consult_app_code">
-				                    <img src="../img2/ewm_indexTop_1.png" style="display:block;">
+				                    <img src="{% static '/img2/ewm_indexTop_1.png' %}" style="display:block;">
 				                </div>
 				            </div>
 				        </li>
@@ -948,7 +949,7 @@
 								<span style="font-size:14px;color: #333;">美西APP</span>
 								<div style="margin-top:20px;border:1px solid #e8e8e8;padding:20px;">
 									<span style="display:block;width:67px;height:67px;">
-										<img src="../img/down_app.png"/>
+										<img src="{% static '/img/down_app.png' %}"/>
 									</span>
 								</div>
 								
@@ -957,7 +958,7 @@
 								<span style="font-size:14px;color: #333;">官方微信</span>
 								<div style="margin-top:20px;border:1px solid #e8e8e8;padding:20px;">
 									<span style="display:block;width:67px;height:67px;">
-										<img src="../img/wechat.png"/>
+										<img src="{% static '/img/wechat.png' %}"/>
 									</span>
 								</div>
 								
