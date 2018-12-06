@@ -19,7 +19,7 @@
 		<div id="header" class="header" style="margin-bottom:20px;">
 		    <div style="width: 100%;background: #fff;">
 		        <div class="header_l">
-		            <a href="index.html" title="美西">
+		            <a href="{% url 'fashion:index' %}" title="美西">
 		            	<div class="logo"></div>
 		            </a>
 		            <div class="float_r" style="line-height:154px;">
@@ -44,7 +44,8 @@
 					<div class="denglu">
 						
 					
-						<form action="" method="post">
+						<form action="{% url 'fashion:register' %}" method="post">
+                            {% csrf_token %}
 							<div class="beauty">
 								登录美西
 							</div>
@@ -60,7 +61,7 @@
 							<div class="phone clearfix">
 								<div class="phone_icon1 float_l"></div>
 								<div class="phone_menu relative float_l">
-									<input type="text" placeholder="请输入手机号或邮箱" id="inp1"/>
+									<input type="text" name="tel" placeholder="请输入手机号" id="inp1"/>
 								</div>
 								
 							</div>
@@ -71,7 +72,7 @@
 							<div class="pwd clearfix">
 								<div class="pwd_icon float_l"></div>
 								<div class="pwd_menu float_l">
-									<input type="password" placeholder="请输入密码" id="inp2"/>
+									<input type="password" name="password" placeholder="请输入密码" id="inp2"/>
 								</div>
 								
 							</div>
@@ -89,7 +90,10 @@
 							<div class="clear"></div>
 							<div id="tip" style="height: 30px;color: #cc3d3d;text-align:center;font-size: 12px;"></div>
 							<div class="regs">
-								<input id="ipt6" type="button" style="cursor:pointer;outline:none;" value="登录">
+								<input id="ipt6" type="submit" style="cursor:pointer;outline:none;" value="登录">
+{#                                {% if err %}#}
+{#                                    alter({{ err }})#}
+{#                                {% endif %}#}
 							</div>
 							<div class="login" style="font-size:12px;">
 								<div href ="" style="color:#669aca;display: inline-block;cursor:pointer;" id="saoma">

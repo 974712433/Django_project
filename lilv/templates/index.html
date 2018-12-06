@@ -37,8 +37,15 @@
         </div>
         <div class="top_r">
 					<span>
-						<a href="{% url 'fashion:login' %}" title="登录" class="top_r_load">登录</a>
-						<a href="{% url 'fashion:register' %}" title="注册">注册</a>
+                        {% if tel %}
+                            <a href="#" >欢迎您! {{ tel }}</a>
+                             <a href="{% url 'fashion:exit' %}" >退出登录</a>
+
+                        {% else %}
+                            <a href="{% url 'fashion:login' %}" title="登录" class="top_r_load">登录</a>
+						    <a href="{% url 'fashion:register' %}" title="注册">注册</a>
+                        {% endif %}
+
 						
 					</span>
             <span id="shop">
@@ -120,7 +127,7 @@
             <li><a href="" title="首页">首页</a></li>
             <li><a href="" title="新近单品" id="menu1">新近单品</a></li>
             <li><a href="" title="全球购">全球购</a></li>
-            <li><a href="list.html" title="女士" id="menu2">女士</a></li>
+            <li><a href="{% url 'fashion:list' %}" title="女士" id="menu2">女士</a></li>
             <li><a href="" title="男仕" id="menu3">男仕</a></li>
             <li><a href="" title="童装" id="menu4">童装</a></li>
             <li><a href="" title="腕表" id="menu5">腕表</a></li>
