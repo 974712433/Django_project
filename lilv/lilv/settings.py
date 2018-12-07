@@ -85,6 +85,7 @@ DATABASES = {
         'NAME': 'porject',
         'USER':'root',
         'PASSWORD': 'yaya520123'
+
     }
 }
 
